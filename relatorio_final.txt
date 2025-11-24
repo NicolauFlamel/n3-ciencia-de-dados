@@ -1,0 +1,73 @@
+
+================================================================================
+RELATÓRIO FINAL - PREVISÃO DE SÉRIES TEMPORAIS
+================================================================================
+
+1. OBJETIVO DO PROJETO:
+   Prever o número de visualizações futuras de páginas da Wikipedia,
+   considerando tendências e eventos especiais.
+
+2. DATASET:
+   - Fonte: Web Traffic Time Series Forecasting (Kaggle)
+   - Período: Julho 2015 - Dezembro 2016
+   - Frequência: Diária
+   - Páginas analisadas: 9
+
+3. ETAPAS REALIZADAS:
+   ✓ Análise Exploratória de Dados
+   ✓ Preparação e Limpeza de Dados
+   ✓ Engenharia de Features
+   ✓ Implementação de 12 Modelos
+   ✓ Avaliação e Comparação
+
+4. MODELOS IMPLEMENTADOS:
+   Baseline:
+     - Naive (Persistência)
+     - Média Móvel Simples
+     - Suavização Exponencial Simples
+   
+   Estatísticos:
+     - ARIMA
+     - SARIMA  
+     - Holt-Winters
+   
+   Machine Learning:
+     - Prophet
+     - Ridge Regression
+     - Random Forest
+     - Gradient Boosting
+     - XGBoost
+     - LSTM
+
+5. MELHOR MODELO: Ridge
+   
+   Métricas de Performance:
+     - MAE:  1.54
+     - RMSE: 2.25
+     - MAPE: 2846237230.58%
+     - R²:   0.8546
+
+6. TOP 5 MODELOS (por MAE):
+
+   1. Ridge                - MAE:     1.54
+   2. Gradient_Boosting    - MAE:     3.78
+   3. XGBoost              - MAE:     3.93
+   4. Random_Forest        - MAE:     4.46
+   5. LSTM                 - MAE:    10.97
+
+7. CONCLUSÕES:
+   - O modelo Ridge apresentou o melhor desempenho geral
+   - Todos os modelos superaram o baseline Naive
+   - Features temporais mostraram-se relevantes para previsão
+   - Sazonalidade semanal foi identificada nos dados
+
+8. RECOMENDAÇÕES:
+   - Implementar ensemble dos top 3 modelos para produção
+   - Monitorar performance continuamente
+   - Re-treinar mensalmente com dados novos
+   - Considerar features adicionais (eventos, feriados)
+
+================================================================================
+Relatório gerado automaticamente
+Data: 2025-11-23 20:43:45
+================================================================================
