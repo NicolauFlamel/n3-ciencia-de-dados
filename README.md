@@ -1,4 +1,4 @@
-# Projeto de Previsão de Séries Temporais
+# Projeto de Previsão de Séries Temporais - Grupo 2
 ## Previsão de Visualizações de Páginas da Wikipedia
 
 ---
